@@ -1,19 +1,20 @@
 package com.lukemi.lib.tutorial.rxjava2.create;
 
 import io.reactivex.Observable;
-import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
 public class Timer {
     public static void main(String[] args) {
 
-        // ToDo timer
-        Observable.timer(2, TimeUnit.SECONDS)
-                .subscribe(new Consumer<Long>() {
-                    public void accept(Long aLong) throws Exception {
-                        System.out.println(aLong);
-                    }
-                });
+        Observable.timer(2, TimeUnit.SECONDS, Schedulers.trampoline())
+                .doFinally(() -> {
+                    System.out.println("final delay : " + System.currentTimeMillis());
+                })
+                .doOnSubscribe(disposable -> {
+                    System.out.println("delay : " + System.currentTimeMillis());
+                })
+                .subscribe(aLong -> System.out.println("subscribe delay : " + System.currentTimeMillis()));
     }
 }

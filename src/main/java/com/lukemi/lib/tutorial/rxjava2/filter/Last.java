@@ -1,11 +1,11 @@
-package com.lukemi.lib.tutorial.rxjava2.create;
+package com.lukemi.lib.tutorial.rxjava2.filter;
 
 import io.reactivex.Observable;
 
-public class Repeat {
+public class Last {
     public static void main(String[] args) {
-        Observable.range(1, 4)
-                .repeat(2)
+        Observable.just(1,4,3,6,7)
+                .last(3)
                 .subscribe(integer -> System.out.println(integer));
     }
 }
