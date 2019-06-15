@@ -1,6 +1,6 @@
-package com.lukemi.robot;
+package com.lukemi.robot.dingding;
 
-public class ContentModel {
+public class DingDingLinkModel {
     public String text;
     public String title;
     public String picUrl;

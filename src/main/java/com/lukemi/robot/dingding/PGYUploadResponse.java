@@ -1,4 +1,4 @@
-package com.lukemi.robot;
+package com.lukemi.robot.dingding;
 
 /**
  * 调用蒲公英机器人
