@@ -9,6 +9,13 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * @author lukemi
+ * @date 2019/6/18 10:22
+ * @des 钉钉机器人
+ * @link https://open-doc.dingtalk.com/microapp/serverapi2/qf2nxq
+ * @mail chenmingzhiji@163.com
+ **/
 public class DingDingRobot {
     static String path = "https://oapi.dingtalk.com/robot/send?access_token=f7101297d61bfa23b6e1b0ff14c86b0035fce7780d47698b02b64fbb6d00e2bf";
 
@@ -174,19 +181,19 @@ public class DingDingRobot {
         String str = "{\n" +
                 "    \"actionCard\": {\n" +
                 "        \"title\": \"乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身\", \n" +
-                "        \"text\": \"![screenshot](serverapi2/@lADOpwk3K80C0M0FoA) \n" +
+                "        \"text\": \"![screenshot](https://www.baidu.com/img/baidu_jgylogo3.gif) \n" +
                 " ### 乔布斯 20 年前想打造的苹果咖啡厅 \n" +
                 " Apple Store 的设计正从原来满满的科技感走向生活化，而其生活化的走向其实可以追溯到 20 年前苹果一个建立咖啡馆的计划\", \n" +
                 "        \"hideAvatar\": \"0\", \n" +
                 "        \"btnOrientation\": \"0\", \n" +
                 "        \"btns\": [\n" +
                 "            {\n" +
-                "                \"title\": \"内容不错\", \n" +
-                "                \"actionURL\": \"https://www.dingtalk.com/\"\n" +
+                "                \"title\": \"头条官网\", \n" +
+                "                \"actionURL\": \"https://toutiao.com/\"\n" +
                 "            }, \n" +
                 "            {\n" +
-                "                \"title\": \"不感兴趣\", \n" +
-                "                \"actionURL\": \"https://www.dingtalk.com/\"\n" +
+                "                \"title\": \"腾讯新闻\", \n" +
+                "                \"actionURL\": \"https://www.qq.com/\"\n" +
                 "            }\n" +
                 "        ]\n" +
                 "    }, \n" +
